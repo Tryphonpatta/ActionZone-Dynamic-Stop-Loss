@@ -1,7 +1,8 @@
 ## ActionZone and Dynamic StopLoss
 
 
-You can use the [editor on GitHub](https://github.com/Tryphonpatta/ActionZone-Dynamic-Stop-Loss/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+this indicator is inspired by CDC Action Zone and Chandelier Exit
+src (https://www.tradingview.com/script/rGpAOoLi-CDC-ActionZone-V3-2020/) [CDC Action Zone]
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
