@@ -1,2 +1,2 @@
 # ActionZone-Dynamic-Stop-Loss
-hello
+this is the indicator build in pinescript.
