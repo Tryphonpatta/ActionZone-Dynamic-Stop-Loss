@@ -2,7 +2,9 @@
 
 
 this indicator is inspired by CDC Action Zone and Chandelier Exit
-src (https://www.tradingview.com/script/rGpAOoLi-CDC-ActionZone-V3-2020/) [CDC Action Zone]
+src [Link](https://www.tradingview.com/script/rGpAOoLi-CDC-ActionZone-V3-2020/) [CDC Action Zone]
+
+src [Link](https://www.tradingview.com/script/AqXxNS7j-Chandelier-Exit/) [Chandelier Exit]
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
