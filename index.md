@@ -2,6 +2,7 @@
 
 
 this indicator is inspired by CDC Action Zone and Chandelier Exit
+
 src [Link](https://www.tradingview.com/script/rGpAOoLi-CDC-ActionZone-V3-2020/) [CDC Action Zone]
 
 src [Link](https://www.tradingview.com/script/AqXxNS7j-Chandelier-Exit/) [Chandelier Exit]
