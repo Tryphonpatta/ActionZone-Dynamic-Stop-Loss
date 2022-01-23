@@ -1,0 +1,33 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © beebobbob956
+
+//@version=5
+strategy("G",overlay = true)
+fast = 12
+slow = 26
+float mul = 4
+a = ta.ema(close,fast)
+b = ta.ema(close,slow)
+plot(ta.ema(close,fast),color = color.red)
+plot(ta.ema(close,slow),color = color.green)
+bool up = ta.crossover(ta.ema(close,fast),ta.ema(close,slow))
+bool down = ta.crossunder(ta.ema(close,fast),ta.ema(close,slow))
+plotshape(up,style = shape.circle,color = color.green )
+plotshape(down,style = shape.circle,color = color.red )
+plotcandle(open, high, low, close, title='Title', color = a > b ? color.orange : color.white, wickcolor=color.black)
+strategy.entry("buy", strategy.long,1, when = up)
+strategy.entry("sell", strategy.short, 1, when = down)
+atr = mul*ta.atr(22)
+longstop = ta.highest(15) - atr
+longstopprev = nz(longstop[1],longstop)
+longstop := close[1]> longstopprev ? math.max(longstop, longstopprev) : longstop
+
+shortstop = ta.lowest(15) + atr
+shortstopprev = nz(shortstop[1],shortstop)
+shortstop := close[1]< shortstopprev ? math.min(shortstop, shortstopprev) : shortstop
+
+//plot(longstop,linewidth = 3, color = strategy.position_size < 0 ? color.red : color.blue)
+plot(strategy.position_size > 0 ? longstop : na ,style=plot.style_linebr,linewidth = 2,color = color.yellow )
+plot(strategy.position_size < 0 ? shortstop : na ,style=plot.style_linebr,linewidth = 2,color = color.blue )
+
+
